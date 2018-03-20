@@ -64,7 +64,7 @@ class ElasticsearchAT17 < Formula
     ln_s etc/"elasticsearch", prefix/"config"
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<~EOS
     Data:    #{var}/elasticsearch/#{cluster_name}/
     Logs:    #{var}/log/elasticsearch/#{cluster_name}.log
     Plugins: #{var}/lib/elasticsearch/plugins/
